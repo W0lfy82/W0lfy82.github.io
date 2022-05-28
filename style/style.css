@@ -1,20 +1,76 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Roboto:wght@300&display=swap');
+
 html {
     font-family: "Roboto", sans-serif;
     color: lightgreen;
+    background-color: yellowgreen;
+    height: 100%;
+    font-weight: bold;
 }
+
+body {
+    margin-right: 5%;
+    margin-left: 5%;
+    background-color: aliceblue;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    padding: 1%;
+    height: 100%;
+}
+
 h1 {
     font-family: "Open Sans", sans-serif;
     color: brown;
 }
+
 h2 {
     font-family: "Open Sans", sans-serif;
     color: brown;
 }
+
 table {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: lightgreen;
 }
-ul#menu li
-{display: inline;}
+
+ul.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    
+  }
+  
+  li.menu {
+    background-color: brown;
+    margin-left: 0.25%;
+    margin-right: 0.25%;
+    width: 25%;
+    box-shadow: 2px 4px lightgreen;
+  }
+  
+  li a.menu {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: antiquewhite;
+    font-weight: bolder;    
+  }
+ h1.welcome {
+     text-align: center;
+ }
+ table.carte {
+     margin-left: auto;
+     margin-right: auto;
+ }
+ img#wimg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+ }
