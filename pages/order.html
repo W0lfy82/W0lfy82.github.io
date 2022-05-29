@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Megrendelőlap</title>
+    <link rel="stylesheet" href="/style/style.css">
+</head>
+
+<body>
+
+    <ul class="menu">
+        <li class="menu"><a class="menu" href="/index.html">Főoldal</a></li>
+        <li class="menu"><a class="menu" href="/pages/menu.html">Étlap</a></li>
+        <li class="menu"><a class="menu" href="/pages/sale.html">Akciók</a></li>
+        <li class="menu"><a class="menu" href="/pages/order.html">Megrendelés</a></li>
+        <li class="menu"><a class="menu" href="/pages/contact.html">Elérhetőségek</a></li>
+    </ul>
+
+    <div class="container">
+        <form>
+            <fieldset class="fieldset">
+                <legend>Személyes adatok</legend>
+                <div>
+                    <label for="name">Név: </label>
+                    <input type="text" id="name" name="name" placeholder="Név" required>
+                </div>
+                <div>
+                    <label for="email">Email cím: </label>
+                    <input type="email" name="email" id="email" placeholder="Email cím" required>
+                </div>
+                <div>
+                    <label for="address">Szállítási cím: </label>
+                    <input type="text" id="address" name="address" placeholder="Cím" required>
+                </div>
+                <div>
+                    <label for="comment">Megjegyzés a futárnak: </label>
+                    <textarea name="comment" id="comment" rows="5"></textarea>
+                </div>
+            </fieldset>
+            <fieldset class="fieldset">
+                <legend>Megrendelt termék</legend>
+                <div>
+                    <label for="sp">Választott pizza: </label>
+                    <select name="pizza" id="sp">
+                        <option value="Margarita">Margarita</option>
+                        <option value="Négysajtos">Négysajtos</option>
+                        <option value="Pepperoni">Pepperoni</option>
+                        <option value="Prosciutto">Prosciutto</option>
+                        <option value="Hawaii">Hawaii</option>
+                        <option value="Funghi">Funghi</option>
+                        <option value="Magyaros">Magyaros</option>
+                    </select>
+                </div>
+                <span>Extra feltét: </span>
+                <div>
+                    <label for="parm">Parmezán sajt</label>
+                    <input type="checkbox" name="parm" id="parm">
+                </div>
+                <div>
+                    <label for="prag">Prágai sonka</label>
+                    <input type="checkbox" name="prag" id="prag">
+                </div>
+                <div>
+                    <label for="fung">Szarvasgomba</label>
+                    <input type="checkbox" name="fung" id="fung">
+                </div>
+                <div>
+                    <label for="quantity">Mennyiség: </label>
+                    <input type="number" id="quantity" name="quantity" min="1" max="5">
+                </div>
+            </fieldset>
+            <input type="button" value="Megrendelés" onclick="msg(xForint)" class="button">
+        </form>
+    </div>
+
+</body>
+
+</html>
