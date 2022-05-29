@@ -42,57 +42,73 @@ ul.menu {
     display: flex;
     justify-content: center;
     width: 100%;
-    
-  }
-  
-  li.menu {
+
+}
+
+li.menu {
     background-color: brown;
     margin-left: 0.25%;
     margin-right: 0.25%;
     width: 25%;
     box-shadow: 2px 4px lightgreen;
-  }
-  
-  li a.menu {
+}
+
+li a.menu {
     display: block;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     color: antiquewhite;
-    font-weight: bolder;    
-  }
-  div.card {
-      background-color: lightgreen;
-      color: antiquewhite;
-      border-radius: 0.5em;
-      padding: 0.5em;
-      margin: 0.5em;
-      overflow: auto;
-  }
-  img.card {
-    float: right;
-    height: 8em;
-    position: relative;
-    bottom: 3em;  
-  }
+    font-weight: bolder;
+}
 
- h1.welcome {
-     text-align: center;
- }
- table.carte {
-     margin-left: auto;
-     margin-right: auto;
- }
- img#wimg {
+div.card {
+    background-color: lightgreen;
+    color: antiquewhite;
+    border-radius: 0.5em;
+    padding: 0.5em;
+    margin: 0.5em;
+    overflow: auto;
+}
+
+div.lefty {
+    float: left;
+    width: 80%;
+}
+
+.akep {
+    height: 8em;
+}
+
+div.righty {
+    float: left;
+    width: 20%;
+}
+
+div.card::after {
+    display: table;
+    clear: both;
+}
+
+h1.welcome {
+    text-align: center;
+}
+
+table.carte {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+td.mitem {
+    padding-left: 20em;
+}
+
+
+
+img#wimg {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 40%;
- }
- .lefty {
-    float: left;
- }
- .leftz {
-    clear: left; 
-    float: left;
- }
+}
