@@ -62,6 +62,23 @@ li a.menu {
     font-weight: bolder;
 }
 
+li.menu:hover {
+    background-color: antiquewhite;
+    margin-left: 0.25%;
+    margin-right: 0.25%;
+    width: 25%;
+    box-shadow: 2px 4px lightgreen;
+}
+
+li a.menu:hover {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: brown;
+    font-weight: bolder;
+}
+
 div.card {
     background-color: lightgreen;
     color: antiquewhite;
@@ -98,7 +115,22 @@ table.carte {
     margin-left: auto;
     margin-right: auto;
     width: 100%;
+    color: brown;
 }
+
+table.carte tr:nth-child(even){
+    background-color: lightcyan;
+}
+
+table.carte tr:nth-child(odd){
+    background-color: lightpink;
+}
+
+.tpo {
+    font-weight: bolder;
+    font-size: larger;
+}
+
 
 td.mitem {
     padding-left: 20em;
